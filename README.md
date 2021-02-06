@@ -1,6 +1,4 @@
 # Arduino-capacitive-touch-RGB
-
-## About
 Library Arduino for capacitive touch and RGB led
 - Detect touch and hold
 - Control RGB
@@ -34,7 +32,34 @@ Just download and upload it to arduino board using arduino IDE
 	> If using N channel FET, you need to set it to common cathode.  
 	> CODE : `#define COMMON_ANODE false`
 	
-
+## Touch Mapping
+```
+start
+|
++-- any touch ==> turn on
+|
++-- 2x touch ==> change mode (mode 1 to 10) ==> list mode in ronnRGB.h
+|
++-- 3x touch ==> turn off
+|
++-- 4x touch ==> setting mode (3x blink blue)
+|   |
+|   +-- 1x touch ==> change color
+|   |
+|   +-- 1x touch + hold ==> step change color
+|   |
+|   +-- 2x touch ==> increase brightness +50 (blink red when max)
+|   |
+|   +-- 2x touch + hold ==> increase brightness (blink red when max)
+|   |
+|   +-- 3x touch ==> decrease brightness -50 (blink red when minimum)
+|   |
+|   +-- 3x touch + hold ==> decrease brightness (blink red when mininmum)
+|   |
+|   +-- 4x touch ==> exit setting mode (3x blink green)
+|
++-- 10x touch ==> reset default (blink yellow)
+```
 
 ## License and credits
 My code under MIT license, other libraries follow their own license.
