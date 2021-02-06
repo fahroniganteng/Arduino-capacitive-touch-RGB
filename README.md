@@ -7,7 +7,7 @@ Library Arduino for capacitive touch and RGB led
 	- etc
 	
 ## Demo
-> video will be uploaded soon...
+[![DEMO](http://img.youtube.com/vi/1S4xeuDZLzs/0.jpg)](https://youtu.be/1S4xeuDZLzs)
 
 ## Instalation guide
 Just download and upload it to arduino board using arduino IDE
