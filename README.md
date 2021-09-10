@@ -66,3 +66,8 @@ My code under MIT license, other libraries follow their own license.
 - Timer.h
 - capacitive.h
 - etc...
+
+## Donation  
+Support me  
+- [Send me coffee](https://sociabuzz.com/fahroniganteng/tribe)
+- [or maybe ice cream](https://trakteer.id/fahroniganteng/tip) 
